@@ -1,0 +1,58 @@
+#app {
+    /*background: #ebebeb;*/
+    background: #2c3e50;
+    min-height: 100vh;
+    /*background: url(https://getuikit.com//images/section-background.svg) 50% 17vh no-repeat,linear-gradient(to left top,#28a5f5, #063f77) 0 0 no-repeat;*/
+}
+.uk-card {
+    background: #34495e;
+    /*background: linear-gradient(0deg, rgba(52,73,94,1) 50%, rgba(149,193,31,0.3) 100%);*/
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.uk-light h1, h2, h3, h4, h5, h6 {
+    color: #fff !important;
+}
+/*.uk-select, .uk-inpit, .uk-button, .uk-textbox {*/
+input, select, textarea, option, button {
+    border-radius: 5px !important;
+}
+label {
+    font-family: Kit-light-fa-medium !important;
+    color: #d7d7d7 !important;
+}
+.uk-label-warning {
+    background: #e67e22 !important;
+    color: #fff !important;
+}
+.uk-label-danger {
+    background: #e74c3c !important;
+    color: #fff !important;
+}
+.uk-label-success {
+    background: #95c11f !important;
+    color: #fff !important;
+}
+.uk-light .uk-button-primary {
+    background: #95c11f !important;
+    color: #fff !important;
+}
+.uk-light .uk-button-muted {
+    background: #2d2e83 !important;
+    color: #fff !important;
+}
+.uk-light .uk-button-reject {
+    border: 1px solid #b4b5f0 !important;
+    background: none;
+    color: #fff !important;
+}
+
+.uk-alert-warning {
+    background: #2a4056;
+    color: #faa05a;
+    border: 1px solid #faa05a5e;
+    border-radius: 5px;
+}

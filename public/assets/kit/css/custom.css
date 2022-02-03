@@ -1,0 +1,112 @@
+html {
+  width: 100%;
+}
+@font-face {
+  font-family: 'Vazir-light';
+  src: url('../fonts/Vazir-Light.woff'); /* IE9 Compat Modes */
+  src: url('../fonts/Vazir-Light.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Vazir-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Vazir-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Kit-light';
+    src: url('../fonts/kit/Pelak-light.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/kit/Pelak-light.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/kit/Pelak-light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/kit/Pelak-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Kit-light-fa-num';
+    src: url('../fonts/kit/PelakFA-Regular.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/kit/PelakFA-Regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/kit/PelakFA-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/kit/PelakFA-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Kit-light-fa-medium';
+    src: url('../fonts/kit/PelakFA-Medium.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/kit/PelakFA-Medium.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/kit/PelakFA-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/kit/PelakFA-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Kit-light-fa-bold';
+    src: url('../fonts/kit/PelakFA-Bold.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/kit/PelakFA-Bold.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/kit/PelakFA-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/kit/PelakFA-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+* {
+    /*font-family: Vazir-light !important;*/
+    font-family: "Kit-light" !important;
+    /*font-family: Kit-light-fa-medium !important;*/
+}
+.fa-num {
+    font-family: "Kit-light-fa-num" !important;
+}
+
+.fa-kit-medium {
+    font-family: "Kit-light-fa-medium" !important;
+}
+.uk-border-top-1 {
+  border-top: 1px solid lightgray;
+}
+.article {
+  width: 95%;
+  padding: 10px;
+}
+.sidebar {
+  /*padding: 1%;*/
+}
+.state-published {
+    border-radius: 100%;
+    background-color: green;
+    width: 10px;
+    height: 10px;
+}
+.state-drafted {
+    border-radius: 50%;
+    background-color: darkorange;
+    width: 10px;
+    height: 10px;
+}
+.state-deleted {
+    border-radius: 100%;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+.border-1-light {
+  border: 1px solid lightgray;
+}
+
+.model-actions {
+    cursor: pointer;
+}
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    /*display: none; !* Hidden by default *!*/
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: not-allowed; /* Add a pointer on hover */
+}
+#overlay_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
