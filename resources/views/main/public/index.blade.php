@@ -10,7 +10,7 @@
     <div class="uk-container uk-text-center" style="margin-top: 15% !important;">
         <img src="{{ asset('assets/statics/primer-studio-mini.png') }}" alt="">
         <p class="uk-text-lead uk-text-bold">استودیو پرایمر</p>
-        <button class="uk-button uk-button-default" type="button"><a href="{{ route('Customer > Dashboard') }}" class="uk-link uk-link-reset">ورود به سامانه مشتیان</a></button>
+        <button class="uk-button uk-button-default" type="button"><a href="{{ route('Auto Redirect To Panel') }}" class="uk-link uk-link-reset">ورود به سامانه مشتیان</a></button>
     </div>
 </div>
 @endsection

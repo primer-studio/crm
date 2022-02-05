@@ -18,6 +18,11 @@ class UserController extends Controller
         return view('main.user.dashboard.index', compact(['threads', 'invoices']));
     }
 
+    public function index()
+    {
+        return view('main.admin.user.index');
+    }
+
     public function threads()
     {
         return view('main.user.thread.index');

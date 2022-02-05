@@ -20,7 +20,7 @@ This is a growing customer relationship management web application, developed by
 - <img src="https://github.com/primer-studio/assets/blob/main/images/livewire.png?raw=true" width="21" align="top">&nbsp;Scalable interface - Livewire framework [[documentation](https://laravel-livewire.com/docs/quickstart)].
 
 
-- <img src="https://github.com/primer-studio/assets/blob/main/images/jetstream.png?raw=true" width="21" align="top">&nbsp;&nbsp;Powerfull authentication - Laravel Jetstream [[documentation](https://jetstream.laravel.com/)].
+- <img src="https://github.com/primer-studio/assets/blob/main/images/jetstream.png?raw=true" width="21" align="top">&nbsp;&nbsp;Secure authentication - Laravel Jetstream [[documentation](https://jetstream.laravel.com/)].
 
 ## Future features
 

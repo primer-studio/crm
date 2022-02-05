@@ -15,15 +15,25 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', ['App\Http\Controllers\HomeController', 'index'])->name('Home > Index');
 
-//Route::get('/panel', function () {
+// Route::get('/panel', function () {
 //    return (\Illuminate\Support\Facades\Auth::user()->rule == 'admin')
 //        ? redirect(\route('Admin > Dashboard'))
 //        : redirect(\route('Customer > Dashboard'));
-//})->name('Auto Redirect To Panel');
+// })->name('Auto Redirect To Panel');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
+
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('/panel', function () {
+        return (\Illuminate\Support\Facades\Auth::user()->rule == 'admin')
+        ? redirect(\route('Admin > Dashboard'))
+        : redirect(\route('Customer > Dashboard'));
+    })->name('Auto Redirect To Panel');
+});
+
 
 Route::middleware(['auth:sanctum', 'verified', 'HasAdminAccess'])->group(function () {
     Route::prefix('cfx63_admin')->group(function () {
