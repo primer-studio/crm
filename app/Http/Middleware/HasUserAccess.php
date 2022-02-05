@@ -17,7 +17,7 @@ class HasUserAccess
      */
     public function handle(Request $request, Closure $next)
     {
-        if ( Auth::user()->rule == 'customer' || Auth::user()->rule == 'admin' ) {
+        if ( !Auth::user()->rule == 'customer' ) {
             return abort('404');
         }
         return $next($request);
